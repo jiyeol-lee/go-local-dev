@@ -13,8 +13,12 @@ type ConfigSpace struct {
 	Stop  string `json:"stop"`
 }
 
-type Config struct {
+type ConfigOption struct {
 	Spaces []ConfigSpace `json:"spaces"`
+}
+
+type Config struct {
+	Options []ConfigOption `json:"options"`
 }
 
 // defaultConfigFile returns the default configuration file path.
